@@ -70,17 +70,24 @@
     <button class="tarkista-btn" onclick="tarkista('v1', 'sanomme')">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>
-
+  
   <div style="margin-bottom: 20px;">
-    <p>2. Minä <input type="text" id="v2" class="finnish-input" placeholder="puhua"> suomea.</p>
-    <button class="tarkista-btn" onclick="tarkista('v2', 'puhun')">Check</button>
+    <p>2. Minä <input type="text" id="v2" class="finnish-input" placeholder="sanoa"> , että tämä on hyvä idea.</p>
+    <button class="tarkista-btn" onclick="tarkista('v2', 'sanon')">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
 
+
   <div style="margin-bottom: 20px;">
-    <p>3. Me <input type="text" id="v3" class="finnish-input" placeholder="asua"> Helsingissä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'asumme')">Check</button>
+    <p>3. Minä <input type="text" id="v3" class="finnish-input" placeholder="puhua"> suomea.</p>
+    <button class="tarkista-btn" onclick="tarkista('v3', 'puhun')">Check</button>
     <span id="v3-res" class="palaute"></span>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <p>4. Me <input type="text" id="v4" class="finnish-input" placeholder="asua"> Helsingissä.</p>
+    <button class="tarkista-btn" onclick="tarkista('v3', 'asumme')">Check</button>
+    <span id="v4-res" class="palaute"></span>
   </div>
 </div>
 

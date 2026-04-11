@@ -77,7 +77,6 @@
     <span id="v2-res" class="palaute"></span>
   </div>
 
-
   <div style="margin-bottom: 20px;">
     <p>3. Minä <input type="text" id="v3" class="finnish-input" placeholder="puhua"> suomea.</p>
     <button class="tarkista-btn" onclick="tarkista('v3', 'puhun')">Check</button>
@@ -86,7 +85,7 @@
 
   <div style="margin-bottom: 20px;">
     <p>4. Me <input type="text" id="v4" class="finnish-input" placeholder="asua"> Helsingissä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'asumme')">Check</button>
+    <button class="tarkista-btn" onclick="tarkista('v4', 'asumme')">Check</button>
     <span id="v4-res" class="palaute"></span>
   </div>
 </div>

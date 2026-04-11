@@ -13,7 +13,8 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>content by finnmustache © {year}</p>
+        <p>Content by finnmustache © {year}</p>
+        <a href="https://finnmustache.substack.com/">finnmustache.substack.com</a>
         <p>
           {i18n(cfg.locale).components.footer.createdWith}{" "}
           <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}

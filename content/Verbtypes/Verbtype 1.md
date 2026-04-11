@@ -74,13 +74,13 @@
   <div style="margin-bottom: 20px;">
     <p>2. Minä <input type="text" id="v2" class="finnish-input" placeholder="puhua"> suomea.</p>
     <button class="tarkista-btn" onclick="tarkista('v2', 'puhun')">Check</button>
-    <span id="v1-res" class="palaute"></span>
+    <span id="v2-res" class="palaute"></span>
   </div>
 
   <div style="margin-bottom: 20px;">
     <p>3. Me <input type="text" id="v3" class="finnish-input" placeholder="asua"> Helsingissä.</p>
     <button class="tarkista-btn" onclick="tarkista('v3', 'asumme')">Check</button>
-    <span id="v2-res" class="palaute"></span>
+    <span id="v3-res" class="palaute"></span>
   </div>
 </div>
 

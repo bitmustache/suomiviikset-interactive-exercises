@@ -1,3 +1,18 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Targets the site title in the header
+.header {
+  .page-title {
+    font-size: 1.1rem; // Default is usually around 1.5rem
+    font-weight: 700;
+    
+    // Optional: Make it even smaller on mobile phones
+    @media (max-width: 600px) {
+      font-size: 0.95rem;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+  }
+}

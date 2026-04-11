@@ -66,7 +66,7 @@
   <p>Fill in the missing verb in its correct form.</p>
 
   <div style="margin-bottom: 20px;">
-    <p>1. Me <input type="text" id="v1" class="finnish-input" placeholder="sanoa"> muille ystäville "Näkemiin!"</p>
+    <p>1. Me <input type="text" id="v1" class="finnish-input" placeholder="sanoa"> muille ystäville "Näkemiin!".</p>
     <button class="tarkista-btn" onclick="tarkista('v1', 'puhun')">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>

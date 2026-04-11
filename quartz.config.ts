@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "suomiviikset – interactive exercises",
+    pageTitle: "finnmustache",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

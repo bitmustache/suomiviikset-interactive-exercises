@@ -62,8 +62,8 @@
 </style>
 
 <div class="harjoitus-paketti">
-  <h3 style="color: var(--secondary);">Verbiharjoitus: Tyyppi 1</h3>
-  <p>Täytä virkkeen puuttuva verbi oikeassa muodossa.</p>
+  <h3 style="color: var(--secondary);">Verb Practice: Type 1</h3>
+  <p>Fill in the missing verb in its correct form.</p>
 
   <div style="margin-bottom: 20px;">
     <p>1. Minä <input type="text" id="v1" class="finnish-input" placeholder="puhua"> suomea.</p>

@@ -65,6 +65,7 @@
   <h3 style="color: var(--secondary);">Verb Practice: Type 2</h3>
   <p>Fill in the missing verb in its correct form.</p>
   <div style="margin-bottom: 20px;">
+	<p><strong>syödä - to eat</strong></p>
     <p>1. Mitä haluaisit <input type="text" id="v1" class="finnish-input" placeholder="syödä"> lounaaksi tänään?</p>
     <button class="tarkista-btn" onclick="tarkista('v1', 'syödä')">Check</button>
     <span id="v1-res" class="palaute"></span>
@@ -80,6 +81,7 @@
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
+	<p><strong>juoda - to drink</strong></p>
     <p>4. Koira <input type="text" id="v4" class="finnish-input" placeholder="juoda"> vettä pitkän juoksulenkin jälkeen.</p>
     <button class="tarkista-btn" onclick="tarkista('v4', 'juo')">Check</button>
     <span id="v4-res" class="palaute"></span>
@@ -95,6 +97,7 @@
     <span id="v6-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
+	<p><strong>luoda - to create</strong></p>
     <p>7. Käyttäjä <input type="text" id="v7" class="finnish-input" placeholder="luoda"> oman tilin palveluun.</p>
     <button class="tarkista-btn" onclick="tarkista('v7', 'luo')">Check</button>
     <span id="v7-res" class="palaute"></span>
@@ -105,6 +108,7 @@
     <span id="v8-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
+	<p><strong>saada - to get, to receive</strong></p>
     <p>9. Jos minä <input type="text" id="v9" class="finnish-input" placeholder="saada"> hyvän arvosanan tästä kokeesta, pidän juhlat.</p>
     <button class="tarkista-btn" onclick="tarkista('v9', 'saan')">Check</button>
     <span id="v9-res" class="palaute"></span>
@@ -115,6 +119,7 @@
     <span id="v10-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
+	<p><strong>myydä - to sell</strong></p>
     <p>11. Mitä tuotteita tämä yritys <input type="text" id="v11" class="finnish-input" placeholder="myydä"> ?</p>
     <button class="tarkista-btn" onclick="tarkista('v11', 'myy')">Check</button>
     <span id="v11-res" class="palaute"></span>

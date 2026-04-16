@@ -67,8 +67,6 @@
 
 <p>Fill in the missing verb in its correct form.</p>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p><strong>syödä - to eat</strong></p>
@@ -81,8 +79,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>2. Mitä sinä <input type="text" id="v2" class="finnish-input" placeholder="syödä"> ?</p>
@@ -93,8 +89,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>3. Me <input type="text" id="v3" class="finnish-input" placeholder="syödä"> illallista kello 20.00 tänään. Haluatko liittyä seuraamme?</p>
@@ -104,8 +98,6 @@
 <span id="v3-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -119,8 +111,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>5. Isä <input type="text" id="v5" class="finnish-input" placeholder="juoda"> maitoa, kun hän syö lohikeittoa.</p>
@@ -131,8 +121,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>6. Mitä te yleensä <input type="text" id="v6" class="finnish-input" placeholder="juoda"> päivällisellä?</p>
@@ -142,8 +130,6 @@
 <span id="v6-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -157,8 +143,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>8. Mitä sinä voit <input type="text" id="v8" class="finnish-input" placeholder="luoda"> mielikuvituksesi avulla?</p>
@@ -168,8 +152,6 @@
 <span id="v8-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -183,8 +165,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>10. Hän <input type="text" id="v10" class="finnish-input" placeholder="saada"> kyllä auttaa sinua kotitehtävissä.</p>
@@ -194,8 +174,6 @@
 <span id="v10-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -209,8 +187,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>12. He <input type="text" id="v12" class="finnish-input" placeholder="myydä"> vihanneksia torilla.</p>
@@ -220,8 +196,6 @@
 <span id="v12-res" class="palaute"></span>
 
 </div>
-
-  
 
 </div>
 

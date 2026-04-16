@@ -67,8 +67,6 @@
 
 <p>Fill in the missing verb in its correct form.</p>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p><strong>sanoa - to say</strong></p>
@@ -91,8 +89,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>3. He <input type="text" id="v3" class="finnish-input" placeholder="sanoa"> , että he menevät kuntosalille myöhemmin.</p>
@@ -102,8 +98,6 @@
 <span id="v3-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -117,8 +111,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>5. Hän <input type="text" id="v5" class="finnish-input" placeholder="katsoa"> dokumenttia.</p>
@@ -129,8 +121,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>6. Sinä <input type="text" id="v6" class="finnish-input" placeholder="katsoa"> , minä teen.</p>
@@ -140,8 +130,6 @@
 <span id="v6-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -155,8 +143,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>8. Asiakkaiden pitää <input type="text" id="v8" class="finnish-input" placeholder="varoa"> liukasta lattiaa.</p>
@@ -167,8 +153,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>9. Tyttö <input type="text" id="v9" class="finnish-input" placeholder="varoa"> äänekästä naapuria.</p>
@@ -178,8 +162,6 @@
 <span id="v9-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -193,8 +175,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>11. Me <input type="text" id="v11" class="finnish-input" placeholder="puhua"> suomen kieltä Suomessa.</p>
@@ -205,8 +185,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>12. Liisa ja Matti <input type="text" id="v12" class="finnish-input" placeholder="puhua"> kahvilassa.</p>
@@ -216,8 +194,6 @@
 <span id="v12-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -231,8 +207,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>14. Minä <input type="text" id="v14" class="finnish-input" placeholder="nukkua"> vielä. Tehdään aamupalaa pian.</p>
@@ -243,8 +217,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>15. Perhe <input type="text" id="v15" class="finnish-input" placeholder="nukkua"> viikonlopun mökillä.</p>
@@ -254,8 +226,6 @@
 <span id="v15-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -269,8 +239,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>17. Me <input type="text" id="v17" class="finnish-input" placeholder="rakastua"> usein hetkellä, joka on yllätys.</p>
@@ -280,8 +248,6 @@
 <span id="v17-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -295,8 +261,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>19. Sää <input type="text" id="v19" class="finnish-input" placeholder="muuttua"> nopeasti tänään.</p>
@@ -306,8 +270,6 @@
 <span id="v19-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -321,8 +283,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>21. Minua <input type="text" id="v21" class="finnish-input" placeholder="sattua"> mahaan. Minä söin huonosti tänään.</p>
@@ -332,8 +292,6 @@
 <span id="v21-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -347,8 +305,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>23. Hänen puhelin <input type="text" id="v23" class="finnish-input" placeholder="unohtua"> joskus kotiin, kun hänellä on kiire.</p>
@@ -358,8 +314,6 @@
 <span id="v23-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -373,8 +327,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>25. Voitko <input type="text" id="v25" class="finnish-input" placeholder="pysyä"> hetken hiljaa? Olemme kirjastossa.</p>
@@ -385,8 +337,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>26. Miksi tämä ovi ei <input type="text" id="v26" class="finnish-input" placeholder="pysyä"> kiinni?</p>
@@ -396,8 +346,6 @@
 <span id="v26-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -411,8 +359,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>28. Mitä sinä <input type="text" id="v28" class="finnish-input" placeholder="etsiä"> ?</p>
@@ -423,8 +369,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>29. Me <input type="text" id="v29" class="finnish-input" placeholder="etsiä"> hotellia, joka on keskustassa.</p>
@@ -434,8 +378,6 @@
 <span id="v29-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -449,8 +391,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>31. Hän <input type="text" id="v31" class="finnish-input" placeholder="miettiä"> , voisiko auttaa sinua kotitehtävissä.</p>
@@ -461,8 +401,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>32. He <input type="text" id="v32" class="finnish-input" placeholder="miettiä"> usein filosofisia aiheita.</p>
@@ -472,8 +410,6 @@
 <span id="v32-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -487,8 +423,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>34. Akseli <input type="text" id="v34" class="finnish-input" placeholder="lukea"> mielenkiintoista historiaromaania.</p>
@@ -499,8 +433,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>35. Me <input type="text" id="v35" class="finnish-input" placeholder="lukea"> kirjastossa.</p>
@@ -510,8 +442,6 @@
 <span id="v35-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -525,8 +455,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>37. Sinä voit <input type="text" id="v37" class="finnish-input" placeholder="laskea"> ostokset pöydälle.</p>
@@ -536,8 +464,6 @@
 <span id="v37-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -551,8 +477,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>39. Voitko <input type="text" id="v39" class="finnish-input" placeholder="antaa"> minulle suolaa?</p>
@@ -563,8 +487,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>40. Minä <input type="text" id="v40" class="finnish-input" placeholder="antaa"> sinulle lahjan huomenna.</p>
@@ -574,8 +496,6 @@
 <span id="v40-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -589,8 +509,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>42. Palomiehet <input type="text" id="v42" class="finnish-input" placeholder="auttaa"> vanhusta, jolla on hätä.</p>
@@ -601,8 +519,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>43. Voisitko <input type="text" id="v43" class="finnish-input" placeholder="auttaa"> minua? Laitetaan vaatteet kaappiin.</p>
@@ -612,8 +528,6 @@
 <span id="v43-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -627,8 +541,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>45. He <input type="text" id="v45" class="finnish-input" placeholder="odottaa"> vastausta lääkäristä.</p>
@@ -639,8 +551,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>46. Me <input type="text" id="v46" class="finnish-input" placeholder="odottaa"> meidän vuoroamme jonossa.</p>
@@ -650,8 +560,6 @@
 <span id="v46-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -665,8 +573,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>48. Joku <input type="text" id="v48" class="finnish-input" placeholder="soittaa"> ovikelloa. Voitko avata oven?</p>
@@ -677,8 +583,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>49. Sinä <input type="text" id="v49" class="finnish-input" placeholder="soittaa"> ystävällesi usein illalla.</p>
@@ -688,8 +592,6 @@
 <span id="v49-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -703,8 +605,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>51. Koira <input type="text" id="v51" class="finnish-input" placeholder="nukahtaa"> lenkin jälkeen.</p>
@@ -714,8 +614,6 @@
 <span id="v51-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -729,8 +627,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>53. Pertti <input type="text" id="v53" class="finnish-input" placeholder="aloittaa"> karaten maanantaina.</p>
@@ -741,8 +637,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>54. Voisitteko te <input type="text" id="v54" class="finnish-input" placeholder="aloittaa"> siivoamisen?</p>
@@ -752,8 +646,6 @@
 <span id="v54-res" class="palaute"></span>
 
 </div>
-
-  
 
 </div>
 

@@ -63,11 +63,9 @@
 
 <div class="harjoitus-paketti">
 
-<h3 style="color: var(--secondary);">Verb Practice: Type 3</h3>
+<h3 style="color: var(--secondary);">Verb Practice: Verbs (tulla, opiskella, nousta, mennä, purra)</h3>
 
 <p>Fill in the missing verb in its correct form.</p>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -81,8 +79,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>2. Voitko <input type="text" id="v2" class="finnish-input" placeholder="tulla"> tänne? Minulla on asiaa.</p>
@@ -93,8 +89,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>3. Ystävät <input type="text" id="v3" class="finnish-input" placeholder="tulla"> meidän luoksemme tänä viikonloppuna.</p>
@@ -104,8 +98,6 @@
 <span id="v3-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -119,8 +111,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>5. Minä <input type="text" id="v5" class="finnish-input" placeholder="opiskella"> uusia asioita joka viikko.</p>
@@ -131,8 +121,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>6. Suomessa me <input type="text" id="v6" class="finnish-input" placeholder="opiskella"> peruskoulussa yhdeksän vuotta.</p>
@@ -142,8 +130,6 @@
 <span id="v6-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -157,8 +143,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>8. Ensi syksynä tähän <input type="text" id="v8" class="finnish-input" placeholder="nousta"> uusi kauppakeskus!</p>
@@ -169,8 +153,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>9. Minä <input type="text" id="v9" class="finnish-input" placeholder="nousta"> aikaisin aamulla. Tänään on paljon tehtävää!</p>
@@ -180,8 +162,6 @@
 <span id="v9-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -195,8 +175,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>11. Aikooko Liisa <input type="text" id="v11" class="finnish-input" placeholder="mennä"> yliopistolle tänään?</p>
@@ -207,8 +185,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>12. Te <input type="text" id="v12" class="finnish-input" placeholder="mennä"> usein tälle kuntosalille. Paljonko salikortti sinne maksaa?</p>
@@ -218,8 +194,6 @@
 <span id="v12-res" class="palaute"></span>
 
 </div>
-
-  
 
 <div style="margin-bottom: 20px;">
 
@@ -233,8 +207,6 @@
 
 </div>
 
-  
-
 <div style="margin-bottom: 20px;">
 
 <p>14. Ruoka täytyy <input type="text" id="v14" class="finnish-input" placeholder="purra"> moneen kertaan.</p>
@@ -242,6 +214,8 @@
 <button class="tarkista-btn" onclick="tarkista('v14', 'puretaan')">Check</button>
 
 <span id="v14-res" class="palaute"></span>
+
+</div>
 
 </div>
 

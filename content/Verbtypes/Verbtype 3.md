@@ -62,7 +62,7 @@
 </style>
 
 <div class="harjoitus-paketti">
-<h3 style="color: var(--secondary);">Verb Practice: Verbs (tulla, opiskella, nousta, mennä, purra)</h3>
+<h3 style="color: var(--secondary);">Verb Practice: Type 3</h3>
 <p>Fill in the missing verb in its correct form.</p>
 <div style="margin-bottom: 20px;">
 <p><strong>tulla - to come</strong></p>

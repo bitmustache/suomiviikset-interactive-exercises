@@ -72,13 +72,13 @@
   </div>
   <div style="margin-bottom: 20px;">
     <p>2. <input type="text" id="v2" class="finnish-input" placeholder="haluta"> sinä maistaa jälkiruokaa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v2', 'Haluatko', 'haluatko')">Check</button>
+    <button class="tarkista-btn" onclick="tarkista('v2', 'haluatko')">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>osata - to be able to, to know how to</strong></p>
     <p>3. <input type="text" id="v3" class="finnish-input" placeholder="osata"> sinä soittaa pianoa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'Osaatko')">Check</button>
+    <button class="tarkista-btn" onclick="tarkista('v3', 'osaatko')">Check</button>
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">

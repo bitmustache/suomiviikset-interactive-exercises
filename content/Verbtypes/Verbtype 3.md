@@ -162,3 +162,20 @@ function tarkista(id, answer) {
   }
 }
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const inputs = document.querySelectorAll('.finnish-input');
+  inputs.forEach(function(input) {
+    input.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        const parentDiv = input.closest('div');
+        const button = parentDiv.querySelector('.tarkista-btn');
+        if (button) {
+          button.click();
+        }
+      }
+    });
+  });
+});
+</script>

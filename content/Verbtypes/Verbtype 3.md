@@ -136,7 +136,7 @@
 </div>
 <div style="margin-bottom: 20px;">
 <p>14. Ruoka täytyy <input type="text" id="v14" class="finnish-input" placeholder="purra"> moneen kertaan.</p>
-<button class="tarkista-btn" onclick="tarkista('v14', 'puretaan')">Check</button>
+<button class="tarkista-btn" onclick="tarkista('v14', 'purra')">Check</button>
 <span id="v14-res" class="palaute"></span>
 </div>
 </div>

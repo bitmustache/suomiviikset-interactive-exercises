@@ -17,9 +17,11 @@ function tarkista(id, answer) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function attachEnterListeners() {
   const inputs = document.querySelectorAll('.finnish-input');
   inputs.forEach(function(input) {
+    if (input.dataset.enterAttached) return;
+    input.dataset.enterAttached = 'true';
     input.addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
         const parentDiv = input.closest('div');
@@ -30,7 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
+}
+
+document.addEventListener('DOMContentLoaded', attachEnterListeners);
+document.addEventListener('nav', attachEnterListeners);
 `
 
 export default (() => {

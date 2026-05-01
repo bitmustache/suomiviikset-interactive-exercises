@@ -1,5 +1,5 @@
 ---
-title: "Pets (Lemmikit)"
+title: Pets (Lemmikit)
 flashcards:
   - fi: koira
     en: dog
@@ -30,5 +30,4 @@ flashcards:
   - fi: poni
     en: pony
 ---
-
 Learn the Finnish words for common pets.

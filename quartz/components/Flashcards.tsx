@@ -27,7 +27,7 @@ export default ((userOpts?: Options) => {
     const vocabJson = JSON.stringify(vocab)
 
     return (
-      <div class={`flashcards-container ${displayClass ?? ""}`} data-vocab={vocabJson}>
+      <div class={`vocab-container ${displayClass ?? ""}`} data-vocab={vocabJson}>
         <h3>{opts.title}</h3>
         <p class="flashcards-subtitle">Learn and practice these vocabulary words.</p>
 

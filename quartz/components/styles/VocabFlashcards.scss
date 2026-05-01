@@ -1,21 +1,19 @@
-.flashcards-container {
-  margin: 1.5rem 0;
+.vocab-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--highlight);
+  border-radius: 15px;
+  border: 1px solid var(--outline);
 
   h3 {
-    color: var(--secondary, #5c6bc0);
-    margin-bottom: 0.5rem;
-  }
-
-  .flashcards-subtitle {
-    color: #666;
-    margin-bottom: 1.5rem;
+    color: var(--secondary);
   }
 
   .vocab-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 12px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .vocab-item {
@@ -37,17 +35,27 @@
   }
 
   .practice-btn {
-    background: var(--secondary, #5c6bc0);
-    color: #fff;
+    background: var(--secondary);
+    color: var(--light) !important;
     border: none;
+    border-bottom: 4px solid var(--tertiary);
     padding: 10px 24px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.1s;
+    text-decoration: none !important;
 
     &:hover {
-      opacity: 0.9;
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      border-bottom-width: 5px;
+    }
+
+    &:active {
+      transform: translateY(3px);
+      border-bottom-width: 1px;
     }
   }
 
@@ -96,8 +104,8 @@
   }
 
   .flashcard-front {
-    background: var(--secondary, #5c6bc0);
-    color: #fff;
+    background: var(--secondary);
+    color: var(--light) !important;
   }
 
   .flashcard-back {
@@ -121,14 +129,25 @@
   .nav-btn {
     background: #e0e0e0;
     border: none;
+    border-bottom: 4px solid #bdbdbd;
     padding: 8px 20px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.1s;
+    color: var(--dark) !important;
+    text-decoration: none !important;
 
     &:hover {
-      background: #bdbdbd;
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      border-bottom-width: 5px;
+    }
+
+    &:active {
+      transform: translateY(3px);
+      border-bottom-width: 1px;
     }
   }
 
@@ -141,17 +160,26 @@
 
   .back-btn {
     background: transparent;
-    border: 1px solid var(--secondary, #5c6bc0);
-    color: var(--secondary, #5c6bc0);
+    border: 2px solid var(--secondary);
+    border-bottom: 4px solid var(--tertiary);
+    color: var(--secondary) !important;
     padding: 8px 20px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.1s;
+    text-decoration: none !important;
 
     &:hover {
-      background: var(--secondary, #5c6bc0);
-      color: #fff;
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      border-bottom-width: 5px;
+    }
+
+    &:active {
+      transform: translateY(3px);
+      border-bottom-width: 1px;
     }
   }
 }

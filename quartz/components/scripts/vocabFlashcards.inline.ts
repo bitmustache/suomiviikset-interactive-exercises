@@ -70,6 +70,6 @@ function initFlashcard(container: HTMLElement) {
 
 document.addEventListener("nav", () => {
   document
-    .querySelectorAll<HTMLElement>(".flashcards-container")
+    .querySelectorAll<HTMLElement>(".vocab-container")
     .forEach((el) => initFlashcard(el))
 })

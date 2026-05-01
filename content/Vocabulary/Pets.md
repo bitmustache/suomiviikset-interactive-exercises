@@ -1,5 +1,3 @@
-
-
 <style>
   .vocab-container {
     margin: 20px 0;
@@ -220,11 +218,11 @@
     </div>
     <p class="flashcard-hint">Click the card to flip</p>
     <div class="flashcard-nav">
-      <button id="fcPrevBtn" class="nav-btn">&#8592; Prev</button>
+      <button id="fcPrevBtn" class="nav-btn">Prev</button>
       <span class="card-counter" id="cardCounter"></span>
-      <button id="fcNextBtn" class="nav-btn">Next &#8594;</button>
+      <button id="fcNextBtn" class="nav-btn">Next</button>
     </div>
-    <button id="fcBackBtn" class="back-btn">&#8592; Back to list</button>
+    <button id="fcBackBtn" class="back-btn">Back to list</button>
   </div>
 </div>
 

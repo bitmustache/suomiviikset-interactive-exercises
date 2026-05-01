@@ -137,8 +137,8 @@
     <span id="v13-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>14. Kaupungin äänet <input type="text" id="v14" class="finnish-input" placeholder="vaieta"> ympärillä, kun he suutelivat.</p>
-    <button class="tarkista-btn" onclick="tarkista('v14', 'vaikenivat')">Check</button>
+    <p>14. Kaupungin äänet <input type="text" id="v14" class="finnish-input" placeholder="vaieta"> ympärillä, kun he suutelevat.</p>
+    <button class="tarkista-btn" onclick="tarkista('v14', 'vaikenevat')">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>
 </div>

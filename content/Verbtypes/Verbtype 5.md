@@ -159,7 +159,7 @@
     <span id="v17-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>18. Hän <input type="text" id="v18" class="finnish-input" placeholder="punnita"> auton isolla vaa'lla.</p>
+    <p>18. Hän <input type="text" id="v18" class="finnish-input" placeholder="punnita"> auton isolla vaa'alla.</p>
     <button class="tarkista-btn" onclick="tarkista('v18', 'punnitsee')">Check</button>
     <span id="v18-res" class="palaute"></span>
   </div>

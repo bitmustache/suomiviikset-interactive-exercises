@@ -29,6 +29,7 @@ function initFlashcard(container: HTMLElement) {
     vocabList.style.display = "none"
     practiceBtn.style.display = "none"
     flashcardArea.style.display = "flex"
+    flashcardArea.scrollIntoView({ behavior: "smooth", block: "center" })
   }
 
   function showList() {

@@ -1,3 +1,5 @@
+
+
 <style>
   .vocab-container {
     margin: 20px 0;
@@ -207,10 +209,10 @@
     <div class="vocab-item"><span class="vocab-fi">poni</span><span class="vocab-en">pony</span></div>
   </div>
 
-  <button class="practice-btn" onclick="startFlashcards()">Practice with flashcards</button>
+  <button id="fcStartBtn" class="practice-btn">Practice with flashcards</button>
 
   <div id="flashcardArea" class="flashcard-area">
-    <div class="flashcard-wrapper" id="flashcard" onclick="flipCard()">
+    <div class="flashcard-wrapper" id="flashcard">
       <div class="flashcard-inner">
         <div class="flashcard-front" id="cardFront"></div>
         <div class="flashcard-back" id="cardBack"></div>
@@ -218,11 +220,11 @@
     </div>
     <p class="flashcard-hint">Click the card to flip</p>
     <div class="flashcard-nav">
-      <button class="nav-btn" onclick="prevCard()">&#8592; Prev</button>
+      <button id="fcPrevBtn" class="nav-btn">&#8592; Prev</button>
       <span class="card-counter" id="cardCounter"></span>
-      <button class="nav-btn" onclick="nextCard()">Next &#8594;</button>
+      <button id="fcNextBtn" class="nav-btn">Next &#8594;</button>
     </div>
-    <button class="back-btn" onclick="backToList()">&#8592; Back to list</button>
+    <button id="fcBackBtn" class="back-btn">&#8592; Back to list</button>
   </div>
 </div>
 
@@ -246,39 +248,67 @@ var _fcVocab = [
 
 var _fcCurrent = 0;
 
-function _fcUpdateCard() {
-  document.getElementById("cardFront").textContent = _fcVocab[_fcCurrent].en;
-  document.getElementById("cardBack").textContent = _fcVocab[_fcCurrent].fi;
-  document.getElementById("cardCounter").textContent = (_fcCurrent + 1) + " / " + _fcVocab.length;
-  document.getElementById("flashcard").classList.remove("flipped");
+function _fcInit() {
+  var container = document.getElementById("vocabContainer");
+  if (!container) return;
+
+  var startBtn = container.querySelector("#fcStartBtn");
+  var flashcard = container.querySelector("#flashcard");
+  var prevBtn = container.querySelector("#fcPrevBtn");
+  var nextBtn = container.querySelector("#fcNextBtn");
+  var backBtn = container.querySelector("#fcBackBtn");
+  var vocabList = container.querySelector("#vocabList");
+  var flashcardArea = container.querySelector("#flashcardArea");
+  var cardFront = container.querySelector("#cardFront");
+  var cardBack = container.querySelector("#cardBack");
+  var cardCounter = container.querySelector("#cardCounter");
+
+  if (!startBtn || !flashcard) return;
+
+  startBtn.onclick = null;
+  flashcard.onclick = null;
+  prevBtn.onclick = null;
+  nextBtn.onclick = null;
+  backBtn.onclick = null;
+
+  startBtn.addEventListener("click", function () {
+    _fcCurrent = 0;
+    cardFront.textContent = _fcVocab[_fcCurrent].en;
+    cardBack.textContent = _fcVocab[_fcCurrent].fi;
+    cardCounter.textContent = (_fcCurrent + 1) + " / " + _fcVocab.length;
+    flashcard.classList.remove("flipped");
+    vocabList.style.display = "none";
+    startBtn.style.display = "none";
+    flashcardArea.style.display = "flex";
+  });
+
+  flashcard.addEventListener("click", function () {
+    flashcard.classList.toggle("flipped");
+  });
+
+  nextBtn.addEventListener("click", function () {
+    _fcCurrent = (_fcCurrent + 1) % _fcVocab.length;
+    cardFront.textContent = _fcVocab[_fcCurrent].en;
+    cardBack.textContent = _fcVocab[_fcCurrent].fi;
+    cardCounter.textContent = (_fcCurrent + 1) + " / " + _fcVocab.length;
+    flashcard.classList.remove("flipped");
+  });
+
+  prevBtn.addEventListener("click", function () {
+    _fcCurrent = (_fcCurrent - 1 + _fcVocab.length) % _fcVocab.length;
+    cardFront.textContent = _fcVocab[_fcCurrent].en;
+    cardBack.textContent = _fcVocab[_fcCurrent].fi;
+    cardCounter.textContent = (_fcCurrent + 1) + " / " + _fcVocab.length;
+    flashcard.classList.remove("flipped");
+  });
+
+  backBtn.addEventListener("click", function () {
+    vocabList.style.display = "grid";
+    startBtn.style.display = "";
+    flashcardArea.style.display = "none";
+  });
 }
 
-function startFlashcards() {
-  _fcCurrent = 0;
-  _fcUpdateCard();
-  document.getElementById("vocabList").style.display = "none";
-  document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = "none"; });
-  document.getElementById("flashcardArea").style.display = "flex";
-}
-
-function flipCard() {
-  document.getElementById("flashcard").classList.toggle("flipped");
-}
-
-function nextCard() {
-  _fcCurrent = (_fcCurrent + 1) % _fcVocab.length;
-  _fcUpdateCard();
-}
-
-function prevCard() {
-  _fcCurrent = (_fcCurrent - 1 + _fcVocab.length) % _fcVocab.length;
-  _fcUpdateCard();
-}
-
-function backToList() {
-  document.getElementById("vocabList").style.display = "grid";
-  document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = ""; });
-  document.getElementById("flashcardArea").style.display = "none";
-}
+document.addEventListener("DOMContentLoaded", _fcInit);
+document.addEventListener("nav", _fcInit);
 </script>
-

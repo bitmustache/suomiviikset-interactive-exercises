@@ -1,10 +1,14 @@
 <style>
   .vocab-container {
-    font-family: inherit;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--highlight);
+    border-radius: 15px;
+    border: 1px solid var(--outline);
   }
 
   .vocab-container h3 {
-    color: var(--secondary, #5c6bc0);
+    color: var(--secondary);
   }
 
   .vocab-list {
@@ -15,7 +19,7 @@
   }
 
   .vocab-item {
-    background: #f5f5f5;
+    background: var(--light, #f5f5f5);
     border-radius: 8px;
     padding: 12px 16px;
     display: flex;
@@ -33,18 +37,28 @@
   }
 
   .practice-btn {
-    background: var(--secondary, #5c6bc0);
-    color: #fff;
+    background: var(--secondary);
+    color: var(--light) !important;
     border: none;
+    border-bottom: 4px solid var(--tertiary);
     padding: 10px 24px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.1s;
+    text-decoration: none !important;
   }
 
   .practice-btn:hover {
-    opacity: 0.9;
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    border-bottom-width: 5px;
+  }
+
+  .practice-btn:active {
+    transform: translateY(3px);
+    border-bottom-width: 1px;
   }
 
   .flashcard-area {
@@ -53,10 +67,6 @@
     align-items: center;
     gap: 20px;
     margin-top: 16px;
-  }
-
-  .flashcard-area.active {
-    display: flex;
   }
 
   .flashcard-wrapper {
@@ -96,13 +106,13 @@
   }
 
   .flashcard-front {
-    background: var(--secondary, #5c6bc0);
-    color: #fff;
+    background: var(--secondary);
+    color: var(--light) !important;
   }
 
   .flashcard-back {
-    background: #e8eaf6;
-    color: #333;
+    background: var(--light, #e8eaf6);
+    color: var(--dark, #333);
     transform: rotateY(180deg);
   }
 
@@ -121,15 +131,26 @@
   .nav-btn {
     background: #e0e0e0;
     border: none;
+    border-bottom: 4px solid #bdbdbd;
     padding: 8px 20px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.1s;
+    color: var(--dark) !important;
+    text-decoration: none !important;
   }
 
   .nav-btn:hover {
-    background: #bdbdbd;
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    border-bottom-width: 5px;
+  }
+
+  .nav-btn:active {
+    transform: translateY(3px);
+    border-bottom-width: 1px;
   }
 
   .card-counter {
@@ -141,22 +162,31 @@
 
   .back-btn {
     background: transparent;
-    border: 1px solid var(--secondary, #5c6bc0);
-    color: var(--secondary, #5c6bc0);
+    border: 2px solid var(--secondary);
+    border-bottom: 4px solid var(--tertiary);
+    color: var(--secondary) !important;
     padding: 8px 20px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.1s;
+    text-decoration: none !important;
   }
 
   .back-btn:hover {
-    background: var(--secondary, #5c6bc0);
-    color: #fff;
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    border-bottom-width: 5px;
+  }
+
+  .back-btn:active {
+    transform: translateY(3px);
+    border-bottom-width: 1px;
   }
 </style>
 
-<div class="vocab-container">
+<div class="vocab-container" id="vocabContainer">
   <h3>Vocabulary: Pets (Lemmikit)</h3>
   <p>Learn the Finnish words for common pets.</p>
 
@@ -197,59 +227,58 @@
 </div>
 
 <script>
-  (function () {
-    var vocab = [
-      { fi: "koira", en: "dog" },
-      { fi: "kissa", en: "cat" },
-      { fi: "hamsteri", en: "hamster" },
-      { fi: "kala", en: "fish" },
-      { fi: "papukaija", en: "parrot" },
-      { fi: "kani", en: "rabbit" },
-      { fi: "marsu", en: "guinea pig" },
-      { fi: "kilpikonna", en: "turtle" },
-      { fi: "hiiri", en: "mouse" },
-      { fi: "lintu", en: "bird" },
-      { fi: "fretti", en: "ferret" },
-      { fi: "gerbiili", en: "gerbil" },
-      { fi: "kultakala", en: "goldfish" },
-      { fi: "poni", en: "pony" }
-    ];
+var _fcVocab = [
+  { fi: "koira", en: "dog" },
+  { fi: "kissa", en: "cat" },
+  { fi: "hamsteri", en: "hamster" },
+  { fi: "kala", en: "fish" },
+  { fi: "papukaija", en: "parrot" },
+  { fi: "kani", en: "rabbit" },
+  { fi: "marsu", en: "guinea pig" },
+  { fi: "kilpikonna", en: "turtle" },
+  { fi: "hiiri", en: "mouse" },
+  { fi: "lintu", en: "bird" },
+  { fi: "fretti", en: "ferret" },
+  { fi: "gerbiili", en: "gerbil" },
+  { fi: "kultakala", en: "goldfish" },
+  { fi: "poni", en: "pony" }
+];
 
-    var current = 0;
+var _fcCurrent = 0;
 
-    function updateCard() {
-      document.getElementById("cardFront").textContent = vocab[current].en;
-      document.getElementById("cardBack").textContent = vocab[current].fi;
-      document.getElementById("cardCounter").textContent = (current + 1) + " / " + vocab.length;
-      document.getElementById("flashcard").classList.remove("flipped");
-    }
+function _fcUpdateCard() {
+  document.getElementById("cardFront").textContent = _fcVocab[_fcCurrent].en;
+  document.getElementById("cardBack").textContent = _fcVocab[_fcCurrent].fi;
+  document.getElementById("cardCounter").textContent = (_fcCurrent + 1) + " / " + _fcVocab.length;
+  document.getElementById("flashcard").classList.remove("flipped");
+}
 
-    window.startFlashcards = function () {
-      current = 0;
-      updateCard();
-      document.getElementById("vocabList").style.display = "none";
-      document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = "none"; });
-      document.getElementById("flashcardArea").classList.add("active");
-    };
+function startFlashcards() {
+  _fcCurrent = 0;
+  _fcUpdateCard();
+  document.getElementById("vocabList").style.display = "none";
+  document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = "none"; });
+  document.getElementById("flashcardArea").style.display = "flex";
+}
 
-    window.flipCard = function () {
-      document.getElementById("flashcard").classList.toggle("flipped");
-    };
+function flipCard() {
+  document.getElementById("flashcard").classList.toggle("flipped");
+}
 
-    window.nextCard = function () {
-      current = (current + 1) % vocab.length;
-      updateCard();
-    };
+function nextCard() {
+  _fcCurrent = (_fcCurrent + 1) % _fcVocab.length;
+  _fcUpdateCard();
+}
 
-    window.prevCard = function () {
-      current = (current - 1 + vocab.length) % vocab.length;
-      updateCard();
-    };
+function prevCard() {
+  _fcCurrent = (_fcCurrent - 1 + _fcVocab.length) % _fcVocab.length;
+  _fcUpdateCard();
+}
 
-    window.backToList = function () {
-      document.getElementById("vocabList").style.display = "grid";
-      document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = ""; });
-      document.getElementById("flashcardArea").classList.remove("active");
-    };
-  })();
+function backToList() {
+  document.getElementById("vocabList").style.display = "grid";
+  document.querySelectorAll(".practice-btn").forEach(function (b) { b.style.display = ""; });
+  document.getElementById("flashcardArea").style.display = "none";
+}
 </script>
+

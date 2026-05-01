@@ -66,78 +66,78 @@
   <p>Fill in the missing verb in its correct form.</p>
   <div style="margin-bottom: 20px;">
     <p><strong>lämmetä - to warm up</strong></p>
-    <p>1. Odota, että sauna ________!</p>
+    <p>1. Odota, että sauna <input type="text" id="v1" class="finnish-input" placeholder="lämmetä">!</p>
     <button class="tarkista-btn" onclick="tarkista('v1', 'lämpenee')">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>2. Hän ei _______ tälle idealle…</p>
+    <p>2. Hän ei <input type="text" id="v2" class="finnish-input" placeholder="lämmetä"> tälle idealle…</p>
     <button class="tarkista-btn" onclick="tarkista('v2', 'lämpene')">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>kylmetä - to chill, to become cold</strong></p>
-    <p>3. Sää ________ usein Suomessa helmikuussa.</p>
+    <p>3. Sää <input type="text" id="v3" class="finnish-input" placeholder="kylmetä"> usein Suomessa helmikuussa.</p>
     <button class="tarkista-btn" onclick="tarkista('v3', 'kylmenee')">Check</button>
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>4. Pakastimessa jäätelö ________ ja jäätyy taas nopeasti.</p>
+    <p>4. Pakastimessa jäätelö <input type="text" id="v4" class="finnish-input" placeholder="kylmetä"> ja jäätyy taas nopeasti.</p>
     <button class="tarkista-btn" onclick="tarkista('v4', 'kylmenee')">Check</button>
     <span id="v4-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>tarjeta - to withstand the cold, to be warm enough</strong></p>
-    <p>5. __________ sinä ulkona tuolla takilla?</p>
+    <p>5. <input type="text" id="v5" class="finnish-input" placeholder="tarjeta"> sinä ulkona tuolla takilla?</p>
     <button class="tarkista-btn" onclick="tarkista('v5', 'tarkenetko')">Check</button>
     <span id="v5-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>6. Hyvillä ja paksuilla hanskoilla ________ kyllä myös helmikuun pakkasissa!</p>
+    <p>6. Hyvillä ja paksuilla hanskoilla <input type="text" id="v6" class="finnish-input" placeholder="tarjeta"> kyllä myös helmikuun pakkasissa!</p>
     <button class="tarkista-btn" onclick="tarkista('v6', 'tarkenee')">Check</button>
     <span id="v6-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>kyetä - to be able to, to be capable of</strong></p>
-    <p>7. Me mietimme, _________ hän vielä tähän tehtävään.</p>
+    <p>7. Me mietimme, <input type="text" id="v7" class="finnish-input" placeholder="kyetä"> hän vielä tähän tehtävään.</p>
     <button class="tarkista-btn" onclick="tarkista('v7', 'kykeneekö')">Check</button>
     <span id="v7-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>8. ___________ nämä ihmiset ymmärtämään tilanteen vakavuuden?</p>
+    <p>8. <input type="text" id="v8" class="finnish-input" placeholder="kyetä"> nämä ihmiset ymmärtämään tilanteen vakavuuden?</p>
     <button class="tarkista-btn" onclick="tarkista('v8', 'kykenevätkö')">Check</button>
     <span id="v8-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>vanheta - to become older, to expire</strong></p>
-    <p>9. Valtionvelka ei _______.</p>
+    <p>9. Valtionvelka ei <input type="text" id="v9" class="finnish-input" placeholder="vanheta">.</p>
     <button class="tarkista-btn" onclick="tarkista('v9', 'vanhene')">Check</button>
     <span id="v9-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>10. Tuo mies ________ tyylikkäästi.</p>
+    <p>10. Tuo mies <input type="text" id="v10" class="finnish-input" placeholder="vanheta"> tyylikkäästi.</p>
     <button class="tarkista-btn" onclick="tarkista('v10', 'vanhenee')">Check</button>
     <span id="v10-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>nuoreta - to become younger</strong></p>
-    <p>11. Hän ei tuosta enää _______.</p>
+    <p>11. Hän ei tuosta enää <input type="text" id="v11" class="finnish-input" placeholder="nuoreta">.</p>
     <button class="tarkista-btn" onclick="tarkista('v11', 'nuorene')">Check</button>
     <span id="v11-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>12. Iho kuin ________, kun käytät tätä ihovoidetta!</p>
+    <p>12. Iho kuin <input type="text" id="v12" class="finnish-input" placeholder="nuoreta">, kun käytät tätä ihovoidetta!</p>
     <button class="tarkista-btn" onclick="tarkista('v12', 'nuorenee')">Check</button>
     <span id="v12-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>vaieta - to become silent</strong></p>
-    <p>13. Miksi sinä ________, vaikka sinun pitäisi sanoa ääneen, mitä ajattelet?</p>
+    <p>13. Miksi sinä <input type="text" id="v13" class="finnish-input" placeholder="vaieta">, vaikka sinun pitäisi sanoa ääneen, mitä ajattelet?</p>
     <button class="tarkista-btn" onclick="tarkista('v13', 'vaikenet')">Check</button>
     <span id="v13-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>14. Kaupungin äänet __________ ympärillä, kun he suutelivat.</p>
+    <p>14. Kaupungin äänet <input type="text" id="v14" class="finnish-input" placeholder="vaieta"> ympärillä, kun he suutelivat.</p>
     <button class="tarkista-btn" onclick="tarkista('v14', 'vaikenivat')">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>

@@ -1,0 +1,1 @@
+flashcardArea.scrollIntoView({ behavior: "smooth", block: "center" })

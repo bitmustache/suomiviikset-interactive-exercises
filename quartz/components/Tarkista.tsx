@@ -1,7 +1,9 @@
 import { QuartzComponentConstructor } from "./types"
 
 const tarkistaScript = `
-function tarkista(id, answer) {
+function checkAnswer(button) {
+  const id = button.dataset.id;
+  const answer = button.dataset.answer;
   const input = document.getElementById(id);
   const res = document.getElementById(id + '-res');
   const userVal = input.value.trim().toLowerCase();
@@ -17,7 +19,7 @@ function tarkista(id, answer) {
   }
 }
 
-function attachEnterListeners() {
+function attachListeners() {
   const inputs = document.querySelectorAll('.finnish-input');
   inputs.forEach(function(input) {
     if (input.dataset.enterAttached) return;
@@ -32,10 +34,19 @@ function attachEnterListeners() {
       }
     });
   });
+
+  const buttons = document.querySelectorAll('.tarkista-btn');
+  buttons.forEach(function(button) {
+    if (button.dataset.clickAttached) return;
+    button.dataset.clickAttached = 'true';
+    button.addEventListener('click', function() {
+      checkAnswer(button);
+    });
+  });
 }
 
-document.addEventListener('DOMContentLoaded', attachEnterListeners);
-document.addEventListener('nav', attachEnterListeners);
+document.addEventListener('DOMContentLoaded', attachListeners);
+document.addEventListener('nav', attachListeners);
 `
 
 export default (() => {

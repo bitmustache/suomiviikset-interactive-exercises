@@ -67,78 +67,78 @@
   <div style="margin-bottom: 20px;">
     <p><strong>lämmetä - to warm up</strong></p>
     <p>1. Odota, että sauna <input type="text" id="v1" class="finnish-input" placeholder="lämmetä">!</p>
-    <button class="tarkista-btn" onclick="tarkista('v1', 'lämpenee')">Check</button>
+    <button class="tarkista-btn" data-id="v1" data-answer="lämpenee">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>2. Hän ei <input type="text" id="v2" class="finnish-input" placeholder="lämmetä"> tälle idealle…</p>
-    <button class="tarkista-btn" onclick="tarkista('v2', 'lämpene')">Check</button>
+    <button class="tarkista-btn" data-id="v2" data-answer="lämpene">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>kylmetä - to chill, to become cold</strong></p>
     <p>3. Sää <input type="text" id="v3" class="finnish-input" placeholder="kylmetä"> usein Suomessa helmikuussa.</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'kylmenee')">Check</button>
+    <button class="tarkista-btn" data-id="v3" data-answer="kylmenee">Check</button>
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>4. Pakastimessa jäätelö <input type="text" id="v4" class="finnish-input" placeholder="kylmetä"> ja jäätyy taas nopeasti.</p>
-    <button class="tarkista-btn" onclick="tarkista('v4', 'kylmenee')">Check</button>
+    <button class="tarkista-btn" data-id="v4" data-answer="kylmenee">Check</button>
     <span id="v4-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>tarjeta - to withstand the cold, to be warm enough</strong></p>
     <p>5. <input type="text" id="v5" class="finnish-input" placeholder="tarjeta"> sinä ulkona tuolla takilla?</p>
-    <button class="tarkista-btn" onclick="tarkista('v5', 'tarkenetko')">Check</button>
+    <button class="tarkista-btn" data-id="v5" data-answer="tarkenetko">Check</button>
     <span id="v5-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>6. Hyvillä ja paksuilla hanskoilla <input type="text" id="v6" class="finnish-input" placeholder="tarjeta"> kyllä myös helmikuun pakkasissa!</p>
-    <button class="tarkista-btn" onclick="tarkista('v6', 'tarkenee')">Check</button>
+    <button class="tarkista-btn" data-id="v6" data-answer="tarkenee">Check</button>
     <span id="v6-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>kyetä - to be able to, to be capable of</strong></p>
     <p>7. Me mietimme, <input type="text" id="v7" class="finnish-input" placeholder="kyetä"> hän vielä tähän tehtävään.</p>
-    <button class="tarkista-btn" onclick="tarkista('v7', 'kykeneekö')">Check</button>
+    <button class="tarkista-btn" data-id="v7" data-answer="kykeneekö">Check</button>
     <span id="v7-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>8. <input type="text" id="v8" class="finnish-input" placeholder="kyetä"> nämä ihmiset ymmärtämään tilanteen vakavuuden?</p>
-    <button class="tarkista-btn" onclick="tarkista('v8', 'kykenevätkö')">Check</button>
+    <button class="tarkista-btn" data-id="v8" data-answer="kykenevätkö">Check</button>
     <span id="v8-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>vanheta - to become older, to expire</strong></p>
     <p>9. Valtionvelka ei <input type="text" id="v9" class="finnish-input" placeholder="vanheta">.</p>
-    <button class="tarkista-btn" onclick="tarkista('v9', 'vanhene')">Check</button>
+    <button class="tarkista-btn" data-id="v9" data-answer="vanhene">Check</button>
     <span id="v9-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>10. Tuo mies <input type="text" id="v10" class="finnish-input" placeholder="vanheta"> tyylikkäästi.</p>
-    <button class="tarkista-btn" onclick="tarkista('v10', 'vanhenee')">Check</button>
+    <button class="tarkista-btn" data-id="v10" data-answer="vanhenee">Check</button>
     <span id="v10-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>nuoreta - to become younger</strong></p>
     <p>11. Hän ei tuosta enää <input type="text" id="v11" class="finnish-input" placeholder="nuoreta">.</p>
-    <button class="tarkista-btn" onclick="tarkista('v11', 'nuorene')">Check</button>
+    <button class="tarkista-btn" data-id="v11" data-answer="nuorene">Check</button>
     <span id="v11-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>12. Iho kuin <input type="text" id="v12" class="finnish-input" placeholder="nuoreta">, kun käytät tätä ihovoidetta!</p>
-    <button class="tarkista-btn" onclick="tarkista('v12', 'nuorenee')">Check</button>
+    <button class="tarkista-btn" data-id="v12" data-answer="nuorenee">Check</button>
     <span id="v12-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>vaieta - to become silent</strong></p>
     <p>13. Miksi sinä <input type="text" id="v13" class="finnish-input" placeholder="vaieta">, vaikka sinun pitäisi sanoa ääneen, mitä ajattelet?</p>
-    <button class="tarkista-btn" onclick="tarkista('v13', 'vaikenet')">Check</button>
+    <button class="tarkista-btn" data-id="v13" data-answer="vaikenet">Check</button>
     <span id="v13-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>14. Kaupungin äänet <input type="text" id="v14" class="finnish-input" placeholder="vaieta"> ympärillä, kun he suutelevat.</p>
-    <button class="tarkista-btn" onclick="tarkista('v14', 'vaikenevat')">Check</button>
+    <button class="tarkista-btn" data-id="v14" data-answer="vaikenevat">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>
 </div>

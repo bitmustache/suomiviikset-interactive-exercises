@@ -62,120 +62,83 @@
 </style>
 
 <div class="harjoitus-paketti">
-<h3 style="color: var(--secondary);">Verb Practice: Type 3</h3>
-<p>Fill in the missing verb in its correct form.</p>
-<div style="margin-bottom: 20px;">
-<p><strong>tulla - to come</strong></p>
-<p>1. Pappa <input type="text" id="v1" class="finnish-input" placeholder="tulla"> kylään tänään.</p>
-<button class="tarkista-btn" onclick="tarkista('v1', 'tulee')">Check</button>
-<span id="v1-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>2. Voitko <input type="text" id="v2" class="finnish-input" placeholder="tulla"> tänne? Minulla on asiaa.</p>
-<button class="tarkista-btn" onclick="tarkista('v2', 'tulla')">Check</button>
-<span id="v2-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>3. Ystävät <input type="text" id="v3" class="finnish-input" placeholder="tulla"> meidän luoksemme tänä viikonloppuna.</p>
-<button class="tarkista-btn" onclick="tarkista('v3', 'tulevat')">Check</button>
-<span id="v3-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p><strong>opiskella - to study</strong></p>
-<p>4. Nina <input type="text" id="v4" class="finnish-input" placeholder="opiskella"> iltaan asti.</p>
-<button class="tarkista-btn" onclick="tarkista('v4', 'opiskelee')">Check</button>
-<span id="v4-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>5. Minä <input type="text" id="v5" class="finnish-input" placeholder="opiskella"> uusia asioita joka viikko.</p>
-<button class="tarkista-btn" onclick="tarkista('v5', 'opiskelen')">Check</button>
-<span id="v5-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>6. Suomessa me <input type="text" id="v6" class="finnish-input" placeholder="opiskella"> peruskoulussa yhdeksän vuotta.</p>
-<button class="tarkista-btn" onclick="tarkista('v6', 'opiskelemme')">Check</button>
-<span id="v6-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p><strong>nousta - to rise up, to get up</strong></p>
-<p>7. Voisitko jo <input type="text" id="v7" class="finnish-input" placeholder="nousta"> sängystä? Kello on paljon.</p>
-<button class="tarkista-btn" onclick="tarkista('v7', 'nousta')">Check</button>
-<span id="v7-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>8. Ensi syksynä tähän <input type="text" id="v8" class="finnish-input" placeholder="nousta"> uusi kauppakeskus!</p>
-<button class="tarkista-btn" onclick="tarkista('v8', 'nousee')">Check</button>
-<span id="v8-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>9. Minä <input type="text" id="v9" class="finnish-input" placeholder="nousta"> aikaisin aamulla. Tänään on paljon tehtävää!</p>
-<button class="tarkista-btn" onclick="tarkista('v9', 'nousen')">Check</button>
-<span id="v9-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p><strong>mennä - to go</strong></p>
-<p>10. Aiotko <input type="text" id="v10" class="finnish-input" placeholder="mennä"> elokuviin ensi viikolla?</p>
-<button class="tarkista-btn" onclick="tarkista('v10', 'mennä')">Check</button>
-<span id="v10-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>11. Aikooko Liisa <input type="text" id="v11" class="finnish-input" placeholder="mennä"> yliopistolle tänään?</p>
-<button class="tarkista-btn" onclick="tarkista('v11', 'mennä')">Check</button>
-<span id="v11-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>12. Te <input type="text" id="v12" class="finnish-input" placeholder="mennä"> usein tälle kuntosalille. Paljonko salikortti sinne maksaa?</p>
-<button class="tarkista-btn" onclick="tarkista('v12', 'menette')">Check</button>
-<span id="v12-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p><strong>purra - to bite</strong></p>
-<p>13. Varo koiraa! Se saattaa <input type="text" id="v13" class="finnish-input" placeholder="purra">.</p>
-<button class="tarkista-btn" onclick="tarkista('v13', 'purra')">Check</button>
-<span id="v13-res" class="palaute"></span>
-</div>
-<div style="margin-bottom: 20px;">
-<p>14. Ruoka täytyy <input type="text" id="v14" class="finnish-input" placeholder="purra"> moneen kertaan.</p>
-<button class="tarkista-btn" onclick="tarkista('v14', 'purra')">Check</button>
-<span id="v14-res" class="palaute"></span>
-</div>
-</div>
+  <h3 style="color: var(--secondary);">Verb Practice: Verbs (tulla, opiskella, nousta, mennä, purra)</h3>
+  <p>Fill in the missing verb in its correct form.</p>
+  <div style="margin-bottom: 20px;">
+    <p><strong>tulla - to come</strong></p>
+    <p>1. Pappa <input type="text" id="v1" class="finnish-input" placeholder="tulla"> kylään tänään.</p>
+    <button class="tarkista-btn" data-id="v1" data-answer="tulee">Check</button>
+    <span id="v1-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>2. Voitko <input type="text" id="v2" class="finnish-input" placeholder="tulla"> tänne? Minulla on asiaa.</p>
+    <button class="tarkista-btn" data-id="v2" data-answer="tulla">Check</button>
+    <span id="v2-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>3. Ystävät <input type="text" id="v3" class="finnish-input" placeholder="tulla"> meidän luoksemme tänä viikonloppuna.</p>
+    <button class="tarkista-btn" data-id="v3" data-answer="tulevat">Check</button>
+    <span id="v3-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p><strong>opiskella - to study</strong></p>
+    <p>4. Nina <input type="text" id="v4" class="finnish-input" placeholder="opiskella"> iltaan asti.</p>
+    <button class="tarkista-btn" data-id="v4" data-answer="opiskelee">Check</button>
+    <span id="v4-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>5. Minä <input type="text" id="v5" class="finnish-input" placeholder="opiskella"> uusia asioita joka viikko.</p>
+    <button class="tarkista-btn" data-id="v5" data-answer="opiskelen">Check</button>
+    <span id="v5-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>6. Suomessa me <input type="text" id="v6" class="finnish-input" placeholder="opiskella"> peruskoulussa yhdeksän vuotta.</p>
+    <button class="tarkista-btn" data-id="v6" data-answer="opiskelemme">Check</button>
+    <span id="v6-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p><strong>nousta - to rise up, to get up</strong></p>
+    <p>7. Voisitko jo <input type="text" id="v7" class="finnish-input" placeholder="nousta"> sängystä? Kello on paljon.</p>
+    <button class="tarkista-btn" data-id="v7" data-answer="nousta">Check</button>
+    <span id="v7-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>8. Ensi syksynä tähän <input type="text" id="v8" class="finnish-input" placeholder="nousta"> uusi kauppakeskus!</p>
+    <button class="tarkista-btn" data-id="v8" data-answer="nousee">Check</button>
+    <span id="v8-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>9. Minä <input type="text" id="v9" class="finnish-input" placeholder="nousta"> aikaisin aamulla. Tänään on paljon tehtävää!</p>
+    <button class="tarkista-btn" data-id="v9" data-answer="nousen">Check</button>
+    <span id="v9-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p><strong>mennä - to go</strong></p>
+    <p>10. Aiotko <input type="text" id="v10" class="finnish-input" placeholder="mennä"> elokuviin ensi viikolla?</p>
+    <button class="tarkista-btn" data-id="v10" data-answer="mennä">Check</button>
+    <span id="v10-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>11. Aikooko Liisa <input type="text" id="v11" class="finnish-input" placeholder="mennä"> yliopistolle tänään?</p>
+    <button class="tarkista-btn" data-id="v11" data-answer="mennä">Check</button>
+    <span id="v11-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>12. Te <input type="text" id="v12" class="finnish-input" placeholder="mennä"> usein tälle kuntosalille. Paljonko salikortti sinne maksaa?</p>
+    <button class="tarkista-btn" data-id="v12" data-answer="menette">Check</button>
+    <span id="v12-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p><strong>purra - to bite</strong></p>
+    <p>13. Varo koiraa! Se saattaa <input type="text" id="v13" class="finnish-input" placeholder="purra">.</p>
+    <button class="tarkista-btn" data-id="v13" data-answer="purra">Check</button>
+    <span id="v13-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>14. Ruoka täytyy <input type="text" id="v14" class="finnish-input" placeholder="purra"> moneen kertaan.</p>
+    <button class="tarkista-btn" data-id="v14" data-answer="purra">Check</button>
+    <span id="v14-res" class="palaute"></span>
+  </div>
 </div>
 
-<script>
-function tarkista(id, answer) {
-  const input = document.getElementById(id);
-  const res = document.getElementById(id + '-res');
-  const userVal = input.value.trim().toLowerCase();
-  
-  if (userVal === answer) {
-    res.innerHTML = '✅ Hienoa!';
-    // Matches the "Correct" state to your theme's primary accent
-    res.style.color = 'var(--secondary)';
-    input.style.borderBottomColor = 'var(--secondary)';
-  } else {
-    res.innerHTML = '❌ Yritä uudelleen';
-    // Keeping red for errors as it's universally recognized, 
-    // but you could use var(--tertiary) if you prefer theme-specific errors.
-    res.style.color = '#e74c3c';
-    input.style.borderBottomColor = '#e74c3c';
-  }
-}
-</script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const inputs = document.querySelectorAll('.finnish-input');
-  inputs.forEach(function(input) {
-    input.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
-        const parentDiv = input.closest('div');
-        const button = parentDiv.querySelector('.tarkista-btn');
-        if (button) {
-          button.click();
-        }
-      }
-    });
-  });
-});
-</script>

@@ -67,149 +67,113 @@
   <div style="margin-bottom: 20px;">
     <p><strong>haluta - to want</strong></p>
     <p>1. Hän <input type="text" id="v1" class="finnish-input" placeholder="haluta"> ostaa tämän auton.</p>
-    <button class="tarkista-btn" onclick="tarkista('v1', 'haluaa')">Check</button>
+    <button class="tarkista-btn" data-id="v1" data-answer="haluaa">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>2. <input type="text" id="v2" class="finnish-input" placeholder="haluta"> sinä maistaa jälkiruokaa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v2', 'haluatko')">Check</button>
+    <button class="tarkista-btn" data-id="v2" data-answer="haluatko">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>osata - to be able to, to know how to</strong></p>
     <p>3. <input type="text" id="v3" class="finnish-input" placeholder="osata"> sinä soittaa pianoa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'osaatko')">Check</button>
+    <button class="tarkista-btn" data-id="v3" data-answer="osaatko">Check</button>
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>4. Hän <input type="text" id="v4" class="finnish-input" placeholder="osata"> tämän kappaleen sanat.</p>
-    <button class="tarkista-btn" onclick="tarkista('v4', 'osaa')">Check</button>
+    <button class="tarkista-btn" data-id="v4" data-answer="osaa">Check</button>
     <span id="v4-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>pelata - to play (a game)</strong></p>
     <p>5. Haluatko <input type="text" id="v5" class="finnish-input" placeholder="pelata"> tennistä tänään?</p>
-    <button class="tarkista-btn" onclick="tarkista('v5', 'pelata')">Check</button>
+    <button class="tarkista-btn" data-id="v5" data-answer="pelata">Check</button>
     <span id="v5-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>6. Me <input type="text" id="v6" class="finnish-input" placeholder="pelata"> lautapelejä yhdessä jouluna.</p>
-    <button class="tarkista-btn" onclick="tarkista('v6', 'pelaamme')">Check</button>
+    <button class="tarkista-btn" data-id="v6" data-answer="pelaamme">Check</button>
     <span id="v6-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>tavata - to meet</strong></p>
     <p>7. Me <input type="text" id="v7" class="finnish-input" placeholder="tavata"> keskustassa puolenpäivän aikoihin.</p>
-    <button class="tarkista-btn" onclick="tarkista('v7', 'tapaamme')">Check</button>
+    <button class="tarkista-btn" data-id="v7" data-answer="tapaamme">Check</button>
     <span id="v7-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>8. Kenet haluaisit <input type="text" id="v8" class="finnish-input" placeholder="tavata">, jos saisit päättää?</p>
-    <button class="tarkista-btn" onclick="tarkista('v8', 'tavata')">Check</button>
+    <button class="tarkista-btn" data-id="v8" data-answer="tavata">Check</button>
     <span id="v8-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>siivota - to clean up</strong></p>
     <p>9. Me <input type="text" id="v9" class="finnish-input" placeholder="siivota"> koko talon ennen joulua.</p>
-    <button class="tarkista-btn" onclick="tarkista('v9', 'siivoamme')">Check</button>
+    <button class="tarkista-btn" data-id="v9" data-answer="siivoamme">Check</button>
     <span id="v9-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>10. Hän <input type="text" id="v10" class="finnish-input" placeholder="siivota"> autotallin harjalla.</p>
-    <button class="tarkista-btn" onclick="tarkista('v10', 'siivoaa')">Check</button>
+    <button class="tarkista-btn" data-id="v10" data-answer="siivoaa">Check</button>
     <span id="v10-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>herätä - to wake up</strong></p>
     <p>11. Mihin aikaan sinä <input type="text" id="v11" class="finnish-input" placeholder="herätä"> yleensä aamuisin?</p>
-    <button class="tarkista-btn" onclick="tarkista('v11', 'heräät')">Check</button>
+    <button class="tarkista-btn" data-id="v11" data-answer="heräät">Check</button>
     <span id="v11-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>12. Tommi <input type="text" id="v12" class="finnish-input" placeholder="herätä"> kello seitsemän joka aamu.</p>
-    <button class="tarkista-btn" onclick="tarkista('v12', 'herää')">Check</button>
+    <button class="tarkista-btn" data-id="v12" data-answer="herää">Check</button>
     <span id="v12-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>vastata - to answer</strong></p>
     <p>13. Voitko <input type="text" id="v13" class="finnish-input" placeholder="vastata"> puhelimeen? Joku soittaa.</p>
-    <button class="tarkista-btn" onclick="tarkista('v13', 'vastata')">Check</button>
+    <button class="tarkista-btn" data-id="v13" data-answer="vastata">Check</button>
     <span id="v13-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>14. Anni <input type="text" id="v14" class="finnish-input" placeholder="vastata"> sinun sähköpostiisi huomenna.</p>
-    <button class="tarkista-btn" onclick="tarkista('v14', 'vastaa')">Check</button>
+    <button class="tarkista-btn" data-id="v14" data-answer="vastaa">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>avata - to open</strong></p>
     <p>15. Me <input type="text" id="v15" class="finnish-input" placeholder="avata"> ravintolan taas huomenna.</p>
-    <button class="tarkista-btn" onclick="tarkista('v15', 'avaamme')">Check</button>
+    <button class="tarkista-btn" data-id="v15" data-answer="avaamme">Check</button>
     <span id="v15-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>16. Voitko <input type="text" id="v16" class="finnish-input" placeholder="avata"> tämän tonnikalapurkin samalla kun sekoitan ruokaa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v16', 'avata')">Check</button>
+    <button class="tarkista-btn" data-id="v16" data-answer="avata">Check</button>
     <span id="v16-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>pudota - to fall (freefall)</strong></p>
     <p>17. Vesilasi <input type="text" id="v17" class="finnish-input" placeholder="pudota">, jos et ole varovainen!</p>
-    <button class="tarkista-btn" onclick="tarkista('v17', 'putoaa')">Check</button>
+    <button class="tarkista-btn" data-id="v17" data-answer="putoaa">Check</button>
     <span id="v17-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>18. Omena <input type="text" id="v18" class="finnish-input" placeholder="pudota"> puusta.</p>
-    <button class="tarkista-btn" onclick="tarkista('v18', 'putoaa')">Check</button>
+    <button class="tarkista-btn" data-id="v18" data-answer="putoaa">Check</button>
     <span id="v18-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>tilata - to order</strong></p>
     <p>19. He <input type="text" id="v19" class="finnish-input" placeholder="tilata"> usein ison pizzan.</p>
-    <button class="tarkista-btn" onclick="tarkista('v19', 'tilaavat')">Check</button>
+    <button class="tarkista-btn" data-id="v19" data-answer="tilaavat">Check</button>
     <span id="v19-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>20. <input type="text" id="v20" class="finnish-input" placeholder="tilata"> te osat jostakin verkkokaupasta?</p>
-    <button class="tarkista-btn" onclick="tarkista('v20', 'tilaatteko')">Check</button>
+    <button class="tarkista-btn" data-id="v20" data-answer="tilaatteko">Check</button>
     <span id="v20-res" class="palaute"></span>
   </div>
 </div>
 
-<script>
-function tarkista(id, answer) {
-  const input = document.getElementById(id);
-  const res = document.getElementById(id + '-res');
-  const userVal = input.value.trim().toLowerCase();
-  
-  if (userVal === answer) {
-    res.innerHTML = '✅ Hienoa!';
-    // Matches the "Correct" state to your theme's primary accent
-    res.style.color = 'var(--secondary)';
-    input.style.borderBottomColor = 'var(--secondary)';
-  } else {
-    res.innerHTML = '❌ Yritä uudelleen';
-    // Keeping red for errors as it's universally recognized, 
-    // but you could use var(--tertiary) if you prefer theme-specific errors.
-    res.style.color = '#e74c3c';
-    input.style.borderBottomColor = '#e74c3c';
-  }
-}
-</script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const inputs = document.querySelectorAll('.finnish-input');
-  inputs.forEach(function(input) {
-    input.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
-        const parentDiv = input.closest('div');
-        const button = parentDiv.querySelector('.tarkista-btn');
-        if (button) {
-          button.click();
-        }
-      }
-    });
-  });
-});
-</script>

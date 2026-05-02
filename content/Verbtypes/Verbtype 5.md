@@ -67,138 +67,101 @@
   <div style="margin-bottom: 20px;">
     <p><strong>tarvita - to need</strong></p>
     <p>1. <input type="text" id="v1" class="finnish-input" placeholder="tarvita"> sinä lisää vaatteita ulos? Siellä on paljon pakkasta.</p>
-    <button class="tarkista-btn" onclick="tarkista('v1', 'tarvitsetko')">Check</button>
+    <button class="tarkista-btn" data-id="v1" data-answer="tarvitsetko">Check</button>
     <span id="v1-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>2. <input type="text" id="v2" class="finnish-input" placeholder="tarvita"> äiti apua ruoanlaitossa?</p>
-    <button class="tarkista-btn" onclick="tarkista('v2', 'tarvitseeko')">Check</button>
+    <button class="tarkista-btn" data-id="v2" data-answer="tarvitseeko">Check</button>
     <span id="v2-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>valita - to choose</strong></p>
     <p>3. Voit <input type="text" id="v3" class="finnish-input" placeholder="valita"> minkä tahansa juoman!</p>
-    <button class="tarkista-btn" onclick="tarkista('v3', 'valita')">Check</button>
+    <button class="tarkista-btn" data-id="v3" data-answer="valita">Check</button>
     <span id="v3-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>4. Maisa <input type="text" id="v4" class="finnish-input" placeholder="valita"> lomakohdetta ensi kesälle.</p>
-    <button class="tarkista-btn" onclick="tarkista('v4', 'valitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v4" data-answer="valitsee">Check</button>
     <span id="v4-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>havaita - to detect</strong></p>
     <p>5. Ulkona on sumua tänään ja on vaikea <input type="text" id="v5" class="finnish-input" placeholder="havaita"> mitään ympärillä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v5', 'havaita')">Check</button>
+    <button class="tarkista-btn" data-id="v5" data-answer="havaita">Check</button>
     <span id="v5-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>6. Me <input type="text" id="v6" class="finnish-input" placeholder="havaita"> taivaalla paljon sadepilviä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v6', 'havaitsemme')">Check</button>
+    <button class="tarkista-btn" data-id="v6" data-answer="havaitsemme">Check</button>
     <span id="v6-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>mainita - to mention</strong></p>
     <p>7. Matti <input type="text" id="v7" class="finnish-input" placeholder="mainita">, kuinka paljon haluaa säästää rahaa tässä kuussa.</p>
-    <button class="tarkista-btn" onclick="tarkista('v7', 'mainitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v7" data-answer="mainitsee">Check</button>
     <span id="v7-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>8. Te <input type="text" id="v8" class="finnish-input" placeholder="mainita"> usein, että haluaisitte matkustaa Lappiin vaeltamaan.</p>
-    <button class="tarkista-btn" onclick="tarkista('v8', 'mainitsette')">Check</button>
+    <button class="tarkista-btn" data-id="v8" data-answer="mainitsette">Check</button>
     <span id="v8-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>lukita - to lock</strong></p>
     <p>9. Ravintolan henkilökunta <input type="text" id="v9" class="finnish-input" placeholder="lukita"> ovet ennen kotiinlähtöä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v9', 'lukitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v9" data-answer="lukitsee">Check</button>
     <span id="v9-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>10. Maija <input type="text" id="v10" class="finnish-input" placeholder="lukita"> polkupyörän kirjaston lähellä.</p>
-    <button class="tarkista-btn" onclick="tarkista('v10', 'lukitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v10" data-answer="lukitsee">Check</button>
     <span id="v10-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>merkitä - to mark</strong></p>
     <p>11. Minä <input type="text" id="v11" class="finnish-input" placeholder="merkitä"> tämän päivän vapaaksi kalenteriin.</p>
-    <button class="tarkista-btn" onclick="tarkista('v11', 'merkitsen')">Check</button>
+    <button class="tarkista-btn" data-id="v11" data-answer="merkitsen">Check</button>
     <span id="v11-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>12. Voitko <input type="text" id="v12" class="finnish-input" placeholder="merkitä"> nämä tuotteet ostoslistaan?</p>
-    <button class="tarkista-btn" onclick="tarkista('v12', 'merkitä')">Check</button>
+    <button class="tarkista-btn" data-id="v12" data-answer="merkitä">Check</button>
     <span id="v12-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>iloita - to be happy, to rejoice</strong></p>
     <p>13. Hän <input type="text" id="v13" class="finnish-input" placeholder="iloita">, että sinä saavuit hänen syntymäpäivilleen.</p>
-    <button class="tarkista-btn" onclick="tarkista('v13', 'iloitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v13" data-answer="iloitsee">Check</button>
     <span id="v13-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>14. Me <input type="text" id="v14" class="finnish-input" placeholder="iloita">, että hän sai uuden työpaikan.</p>
-    <button class="tarkista-btn" onclick="tarkista('v14', 'iloitsemme')">Check</button>
+    <button class="tarkista-btn" data-id="v14" data-answer="iloitsemme">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>sijaita - to be located</strong></p>
     <p>15. Helsinki <input type="text" id="v15" class="finnish-input" placeholder="sijaita"> Etelä-Suomessa, Itämeren rannalla.</p>
-    <button class="tarkista-btn" onclick="tarkista('v15', 'sijaitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v15" data-answer="sijaitsee">Check</button>
     <span id="v15-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p>16. Missä teidän työpaikkanne <input type="text" id="v16" class="finnish-input" placeholder="sijaita">?</p>
-    <button class="tarkista-btn" onclick="tarkista('v16', 'sijaitsee')">Check</button>
+    <button class="tarkista-btn" data-id="v16" data-answer="sijaitsee">Check</button>
     <span id="v16-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
     <p><strong>punnita - to weigh (oneself, an item etc.)</strong></p>
     <p>17. Voitko <input type="text" id="v17" class="finnish-input" placeholder="punnita"> nämä banaanit? Haen samalla avokadoja.</p>
-    <button class="tarkista-btn" onclick="tarkista('v17', 'punnita')">Check</button>
+    <button class="tarkista-btn" data-id="v17" data-answer="punnita">Check</button>
     <span id="v17-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>18. Hän <input type="text" id="v18" class="finnish-input" placeholder="punnita"> auton isolla vaa'alla.</p>
-    <button class="tarkista-btn" onclick="tarkista('v18', 'punnitsee')">Check</button>
+    <p>18. Hän <input type="text" id="v18" class="finnish-input" placeholder="punnita"> auton isolla vaa'lla.</p>
+    <button class="tarkista-btn" data-id="v18" data-answer="punnitsee">Check</button>
     <span id="v18-res" class="palaute"></span>
   </div>
 </div>
 
-<script>
-function tarkista(id, answer) {
-  const input = document.getElementById(id);
-  const res = document.getElementById(id + '-res');
-  const userVal = input.value.trim().toLowerCase();
-  
-  if (userVal === answer) {
-    res.innerHTML = '✅ Hienoa!';
-    // Matches the "Correct" state to your theme's primary accent
-    res.style.color = 'var(--secondary)';
-    input.style.borderBottomColor = 'var(--secondary)';
-  } else {
-    res.innerHTML = '❌ Yritä uudelleen';
-    // Keeping red for errors as it's universally recognized, 
-    // but you could use var(--tertiary) if you prefer theme-specific errors.
-    res.style.color = '#e74c3c';
-    input.style.borderBottomColor = '#e74c3c';
-  }
-}
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const inputs = document.querySelectorAll('.finnish-input');
-  inputs.forEach(function(input) {
-    input.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
-        const parentDiv = input.closest('div');
-        const button = parentDiv.querySelector('.tarkista-btn');
-        if (button) {
-          button.click();
-        }
-      }
-    });
-  });
-});
-</script>

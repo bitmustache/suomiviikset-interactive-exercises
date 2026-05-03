@@ -1,5 +1,5 @@
 ---
-title: Forest animals (Metsän eläimet)
+title: Wildlife animals (Luonnonvaraiset eläimet)
 flashcards:
   - fi: karhu
     en: bear

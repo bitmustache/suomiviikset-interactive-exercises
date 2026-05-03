@@ -24,3 +24,4 @@ flashcards:
   - fi: orava
     en: squirrel
 ---
+Learn the Finnish words for wildlife animals.

@@ -1,32 +1,37 @@
 ---
-title: Forest berries (Metsämarjat)
+title: "Marjat (Berries)"
 flashcards:
-  - fi: koira
-    en: dog
-  - fi: kissa
-    en: cat
-  - fi: hamsteri
-    en: hamster
-  - fi: kala
-    en: fish
-  - fi: papukaija
-    en: parrot
-  - fi: kani
-    en: rabbit
-  - fi: marsu
-    en: guinea pig
-  - fi: kilpikonna
-    en: turtle
-  - fi: hiiri
-    en: mouse
-  - fi: lintu
-    en: bird
-  - fi: fretti
-    en: ferret
-  - fi: gerbiili
-    en: gerbil
-  - fi: kultakala
-    en: goldfish
-  - fi: poni
-    en: pony
+  - fi: mansikka
+    en: strawberry
+  - fi: mustikka
+    en: blueberry
+  - fi: puolukka
+    en: lingonberry
+  - fi: lakka
+    en: cloudberry
+  - fi: vadelma
+    en: raspberry
+  - fi: kirsikka
+    en: cherry
+  - fi: karhunvatukka
+    en: blackberry
+  - fi: tyrni
+    en: buckthorn
+  - fi: pihlaja
+    en: rowan
+  - fi: metsämansikka
+    en: wild strawberry
+  - fi: punaherukka
+    en: red currant
+  - fi: mustaherukka
+    en: blackcurrant
+  - fi: karpalo
+    en: cranberry
+  - fi: marja
+    en: berry
+  - fi: pensasmarja
+    en: bushberry
+  - fi: metsämarja
+    en: berry in forest
 ---
+Learn the Finnish words for berries.

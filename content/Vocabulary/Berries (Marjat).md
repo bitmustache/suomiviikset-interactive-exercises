@@ -15,10 +15,10 @@ flashcards:
     en: cherry
   - fi: karhunvatukka
     en: blackberry
-  - fi: tyrni
-    en: buckthorn
-  - fi: pihlaja
-    en: rowan
+  - fi: tyrnimarja
+    en: sea buckthorn berry
+  - fi: pihlajanmarja
+    en: rowanberry
   - fi: metsämansikka
     en: wild strawberry
   - fi: punaherukka

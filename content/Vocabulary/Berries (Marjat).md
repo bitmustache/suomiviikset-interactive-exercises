@@ -1,5 +1,5 @@
 ---
-title: "Marjat (Berries)"
+title: Berries (Marjat)
 flashcards:
   - fi: mansikka
     en: strawberry

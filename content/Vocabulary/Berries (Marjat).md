@@ -24,7 +24,7 @@ flashcards:
   - fi: punaherukka
     en: red currant
   - fi: mustaherukka
-    en: blackcurrant
+    en: black currant
   - fi: karpalo
     en: cranberry
   - fi: marja

@@ -53,17 +53,29 @@
 
   <audio id="audio-v1" src="/static/audio/sää.mp3"></audio>
 
+<p>Onko sanassa A vai Ä?</p>
   <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v1">▶</button>
     <span><strong>Kuuntele näyte</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v1">
-	<p>Onko sanassa A vai Ä?</p>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="false">saa</button>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">sää</button>
   </div>
+
+<div class="audio-ohjain">
+    <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v2">▶</button>
+    <span><strong>Kuuntele näyte</strong></span>
+  </div>
+
+  <div class="vaihtoehdot-ryhma" id="ryhma-v2">
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="false">valittaa</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="true">välittää</button>
+  </div>
 </div>
+
+ 
 
 <script src="/static/audio-quiz.js"></script>
 

@@ -52,6 +52,7 @@
   <p>Kuuntele äänite ja valitse oikea vaihtoehto.</p>
 
   <audio id="audio-v1" src="/static/audio/sää.mp3"></audio>
+  <audio id="audio-v2" src="/static/audio/valittaa.mp3"></audio>
 
 <p>Onko sanassa A vai Ä?</p>
   <div class="audio-ohjain">

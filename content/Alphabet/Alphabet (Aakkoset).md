@@ -58,7 +58,7 @@
     <span><strong>Kuuntele näyte</strong></span>
   </div>
 
-  <div class="vaihtoehdot-ryhma" id="ryhma-v3">
+  <div class="vaihtoehdot-ryhma" id="ryhma-v1">
 	<p>Onko sanassa A vai Ä?</p>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">saa</button>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="false">sää</button>

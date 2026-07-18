@@ -1,11 +1,13 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import AudioQuizScript from "./quartz/components/AudioQuizScript"
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.Flashcards(), Component.Tarkista(), () => `<script src="/static/audio-quiz.js" defer></script>`],
+  afterBody: [Component.Flashcards(), Component.Tarkista(), Component.AudioQuizScript()],
   footer: Component.Footer({
     links: {
     },

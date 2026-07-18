@@ -47,6 +47,7 @@
   }
 </style>
 
+<!--
 <div class="kuuntelu-paketti">
   <h3 class="visa-otsikko">🎧 Kuunteluharjoitus</h3>
   <p>Kuuntele äänite ja valitse oikea vaihtoehto.</p>
@@ -65,3 +66,6 @@
 </div>
 
 <script src="/static/audio-quiz.js"></script>
+-->
+
+Coming up!

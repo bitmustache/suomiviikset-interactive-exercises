@@ -73,12 +73,10 @@
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v2">
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="false">valittaa</button>
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="true">välittää</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="true">valittaa</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="false">välittää</button>
   </div>
-</div>
-
- 
+</div> 
 
 <script src="/static/audio-quiz.js"></script>
 

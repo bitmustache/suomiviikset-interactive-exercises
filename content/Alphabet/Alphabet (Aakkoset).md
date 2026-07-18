@@ -47,25 +47,23 @@
   }
 </style>
 
-<!--
 <div class="kuuntelu-paketti">
   <h3 class="visa-otsikko">🎧 Kuunteluharjoitus</h3>
   <p>Kuuntele äänite ja valitse oikea vaihtoehto.</p>
 
-  <audio id="audio-v3" src="/static/audio/talo.mp3"></audio>
+  <audio id="audio-v1" src="/static/audio/sää.mp3"></audio>
 
   <div class="audio-ohjain">
-    <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>
+    <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v1">▶</button>
     <span><strong>Kuuntele näyte</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v3">
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="true">talo</button>
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="false">aamu </button>
+	<p>Onko sanassa A vai Ä?</p>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">saa</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="false">sää</button>
   </div>
 </div>
 
 <script src="/static/audio-quiz.js"></script>
--->
 
-Coming up!

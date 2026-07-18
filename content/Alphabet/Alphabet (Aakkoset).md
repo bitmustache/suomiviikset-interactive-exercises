@@ -60,8 +60,8 @@
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v1">
 	<p>Onko sanassa A vai Ä?</p>
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">saa</button>
-    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="false">sää</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="false">saa</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">sää</button>
   </div>
 </div>
 

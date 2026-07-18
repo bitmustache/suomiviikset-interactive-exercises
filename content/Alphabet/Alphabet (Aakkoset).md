@@ -65,6 +65,8 @@
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v1" data-correct="true">sää</button>
   </div>
 
+<br>
+
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v2">▶</button>
     <span><strong>Kuuntele näyte</strong></span>

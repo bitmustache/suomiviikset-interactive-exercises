@@ -7,7 +7,7 @@ import AudioQuizScript from "./quartz/components/AudioQuizScript"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.Flashcards(), Component.Tarkista(), Component.AudioQuizScript()],
+  afterBody: [Component.Flashcards(), Component.Tarkista(), AudioQuizScript()],
   footer: Component.Footer({
     links: {
     },

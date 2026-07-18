@@ -5,7 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.Flashcards(), Component.Tarkista(),],
+  afterBody: [Component.Flashcards(), Component.Tarkista(), () => `<script src="/static/audio-quiz.js" defer></script>`],
   footer: Component.Footer({
     links: {
     },

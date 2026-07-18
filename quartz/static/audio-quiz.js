@@ -1,27 +1,33 @@
-// This file is safe from Quartz's Markdown parser. No characters will be escaped!
-document.addEventListener("nav", function() {
-  
+// A modular initialization function that can be run at any time
+function initAudioQuiz() {
   // 1. Setup Audio Triggers
   var audioTriggers = document.querySelectorAll(".qz-audio-trigger");
   audioTriggers.forEach(function(btn) {
+    // Prevent duplicate event listeners if navigate fires multiple times
+    if (btn.dataset.initialized) return;
+    btn.dataset.initialized = "true";
+
     btn.addEventListener("click", function(e) {
-      var audioId = e.target.getAttribute("data-audio-target");
+      var audioId = e.currentTarget.getAttribute("data-audio-target");
       var audio = document.getElementById(audioId);
       
-      if (!audio) return;
+      if (!audio) {
+        console.warn("Audio element missing: " + audioId);
+        return;
+      }
       
       if (audio.paused) {
         audio.play().catch(function(err) {
-          console.warn("Audio playback failed or file missing:", err);
+          console.warn("Audio playback failed:", err);
         });
-        e.target.innerHTML = "⏸";
+        e.currentTarget.innerHTML = "⏸";
       } else {
         audio.pause();
-        e.target.innerHTML = "▶";
+        e.currentTarget.innerHTML = "▶";
       }
       
       audio.onended = function() {
-        e.target.innerHTML = "▶";
+        btn.innerHTML = "▶";
       };
     });
   });
@@ -29,6 +35,9 @@ document.addEventListener("nav", function() {
   // 2. Setup Multiple-Choice Options
   var quizOptions = document.querySelectorAll(".qz-vaihtoehto");
   quizOptions.forEach(function(nappi) {
+    if (nappi.dataset.initialized) return;
+    nappi.dataset.initialized = "true";
+
     nappi.addEventListener("click", function(e) {
       var valittu = e.currentTarget;
       var groupId = valittu.getAttribute("data-group");
@@ -39,7 +48,6 @@ document.addEventListener("nav", function() {
       
       var siblings = groupContainer.getElementsByClassName("qz-vaihtoehto");
       
-      // Lock all buttons in this specific question block
       for (var i = 0; i < siblings.length; i++) {
         siblings[i].disabled = true;
         if (siblings[i] === valittu) {
@@ -54,5 +62,15 @@ document.addEventListener("nav", function() {
       }
     });
   });
-  
-});
+}
+
+// CATCH BOTH SCENARIOS:
+// Scenario A: The script loaded late on a fresh refresh (DOM is already built)
+if (document.readyState === "interactive" || document.readyState === "complete") {
+  initAudioQuiz();
+} else {
+  document.addEventListener("DOMContentLoaded", initAudioQuiz);
+}
+
+// Scenario B: The user clicked a sidebar link (SPA Page Navigation)
+document.addEventListener("nav", initAudioQuiz);

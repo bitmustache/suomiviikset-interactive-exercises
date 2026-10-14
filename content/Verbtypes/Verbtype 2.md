@@ -118,16 +118,26 @@
     <button class="tarkista-btn" data-id="v10" data-answer="saa">Check</button>
     <span id="v10-res" class="palaute"></span>
   </div>
-  <div style="margin-bottom: 20px;">
-    <p><strong>myydä - to sell</strong></p>
-    <p>11. Mitä tuotteita tämä yritys <input type="text" id="v11" class="finnish-input" placeholder="myydä"> ?</p>
-    <button class="tarkista-btn" data-id="v11" data-answer="myy">Check</button>
+ <div style="margin-bottom: 20px;">
+    <p>11. Sinä et <input type="text" id="v11" class="finnish-input" placeholder="saada"> juosta täällä! Lattia on liukas.</p>
+    <button class="tarkista-btn" data-id="v11" data-answer="saa">Check</button>
     <span id="v11-res" class="palaute"></span>
   </div>
   <div style="margin-bottom: 20px;">
-    <p>12. He <input type="text" id="v12" class="finnish-input" placeholder="myydä"> vihanneksia torilla.</p>
-    <button class="tarkista-btn" data-id="v12" data-answer="myyvät">Check</button>
+    <p><strong>myydä - to sell</strong></p>
+    <p>12. Mitä tuotteita tämä yritys <input type="text" id="v12" class="finnish-input" placeholder="myydä"> ?</p>
+    <button class="tarkista-btn" data-id="v12" data-answer="myy">Check</button>
     <span id="v12-res" class="palaute"></span>
+  </div>
+  <div style="margin-bottom: 20px;">
+    <p>13. He <input type="text" id="v13" class="finnish-input" placeholder="myydä"> vihanneksia torilla.</p>
+    <button class="tarkista-btn" data-id="v13" data-answer="myyvät">Check</button>
+    <span id="v13-res" class="palaute"></span>
+  </div>
+   <div style="margin-bottom: 20px;">
+    <p>14. Tämä kauppa ei <input type="text" id="v14" class="finnish-input" placeholder="myydä"> alkoholia kello 21 jälkeen.</p>
+    <button class="tarkista-btn" data-id="v14" data-answer="myy">Check</button>
+    <span id="v14-res" class="palaute"></span>
   </div>
 </div>
 

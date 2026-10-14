@@ -62,7 +62,7 @@
 </style>
 
 <div class="harjoitus-paketti">
-  <h3 style="color: var(--secondary);">Verb Practice: Type 2, Positive</h3>
+  <h3 style="color: var(--secondary);">Verb Practice: Type 2 Positive</h3>
   <p>Fill in the missing verb in its correct form.</p>
   <div style="margin-bottom: 20px;">
     <p><strong>syödä - to eat</strong></p>

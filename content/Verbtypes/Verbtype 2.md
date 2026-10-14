@@ -135,7 +135,7 @@
     <span id="v13-res" class="palaute"></span>
   </div>
    <div style="margin-bottom: 20px;">
-    <p>14. Tämä kauppa ei <input type="text" id="v14" class="finnish-input" placeholder="myydä"> alkoholia kello 21 jälkeen.</p>
+    <p>14. Tämä kauppa ei <input type="text" id="v14" class="finnish-input" placeholder="myydä"> alkoholia kello 21.00 jälkeen.</p>
     <button class="tarkista-btn" data-id="v14" data-answer="myy">Check</button>
     <span id="v14-res" class="palaute"></span>
   </div>

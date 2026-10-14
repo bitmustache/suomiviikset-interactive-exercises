@@ -1,5 +1,5 @@
 ---
-title: Computer peripherals (Tietokoneen oheislaitteet)
+title: PC peripherals (Tietokoneen oheislaitteet)
 flashcards:
   - fi: mouse
     en: hiiri
@@ -18,4 +18,4 @@ flashcards:
   - fi: ulkoinen kovalevy
     en: external hard drive
 ---
-Learn the Finnish words for Computer peripherals.
+Learn the Finnish words for PC peripherals.

@@ -78,6 +78,7 @@
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="false">välittää</button>
   </div>
 
+<br>
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>

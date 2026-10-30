@@ -1,4 +1,4 @@
-<style>
+ <style>
   /* 1. CONTAINER - Uses Quartz highlight background */
   .harjoitus-paketti {
     background-color: var(--highlight); 

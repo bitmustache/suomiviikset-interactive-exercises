@@ -48,17 +48,18 @@
 </style>
 
 <div class="kuuntelu-paketti">
-  <h3 class="visa-otsikko">🎧 Kuunteluharjoitus</h3>
-  <p>Kuuntele äänite ja valitse oikea vaihtoehto.</p>
+  <h3 class="visa-otsikko">🎧 Kuunteluharjoitus - Listening practice</h3>
+  <p>Kuuntele äänite ja valitse oikea vaihtoehto. - Listen to the recording and choose the correct alternative.</p>
 
   <audio id="audio-v1" src="/static/audio/sää.mp3"></audio>
   <audio id="audio-v2" src="/static/audio/valittaa.mp3"></audio>
   <audio id="audio-v3" src="/static/audio/maa.mp3"></audio>
+  <audio id="audio-v4" src="/static/audio/saari.mp3"></audio>
 
-<p>Onko sanassa A vai Ä?</p>
+<p>Onko sanassa A vai Ä? - Does the word have A or Ä?</p>
   <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v1">▶</button>
-    <span><strong>Kuuntele näyte</strong></span>
+    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v1">
@@ -70,7 +71,7 @@
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v2">▶</button>
-    <span><strong>Kuuntele näyte</strong></span>
+    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v2">
@@ -82,12 +83,24 @@
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>
-    <span><strong>Kuuntele näyte</strong></span>
+    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v3">
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="false">mä</button>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="true">maa</button>
+  </div>
+
+<br>
+
+<div class="audio-ohjain">
+    <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>
+    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
+  </div>
+
+  <div class="vaihtoehdot-ryhma" id="ryhma-v4">
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v4" data-correct="true">saari</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v4" data-correct="false">sääri</button>
   </div>
 </div> 
 

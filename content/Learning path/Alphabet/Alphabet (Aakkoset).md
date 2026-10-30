@@ -53,6 +53,7 @@
 
   <audio id="audio-v1" src="/static/audio/sää.mp3"></audio>
   <audio id="audio-v2" src="/static/audio/valittaa.mp3"></audio>
+  <audio id="audio-v3" src="/static/audio/maa.mp3"></audio>
 
 <p>Onko sanassa A vai Ä?</p>
   <div class="audio-ohjain">
@@ -75,6 +76,17 @@
   <div class="vaihtoehdot-ryhma" id="ryhma-v2">
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="true">valittaa</button>
     <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v2" data-correct="false">välittää</button>
+  </div>
+</div> 
+
+<div class="audio-ohjain">
+    <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>
+    <span><strong>Kuuntele näyte</strong></span>
+  </div>
+
+  <div class="vaihtoehdot-ryhma" id="ryhma-v3">
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="false">mä</button>
+    <button class="valinta-btn qz-vaihtoehto" data-group="ryhma-v3" data-correct="true">maa</button>
   </div>
 </div> 
 

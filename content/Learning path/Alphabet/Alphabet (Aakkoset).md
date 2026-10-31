@@ -59,7 +59,7 @@
 <p>Onko sanassa A vai Ä? - Does the word have A or Ä?</p>
   <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v1">▶</button>
-    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
+    <span><strong>Kuuntele - Listen</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v1">
@@ -71,7 +71,7 @@
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v2">▶</button>
-    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
+    <span><strong>Kuuntele - Listen</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v2">
@@ -83,7 +83,7 @@
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v3">▶</button>
-    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
+    <span><strong>Kuuntele - Listen</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v3">
@@ -95,7 +95,7 @@
 
 <div class="audio-ohjain">
     <button class="soita-btn qz-audio-trigger" data-audio-target="audio-v4">▶</button>
-    <span><strong>Kuuntele näyte - Listen to the sample</strong></span>
+    <span><strong>Kuuntele - Listen</strong></span>
   </div>
 
   <div class="vaihtoehdot-ryhma" id="ryhma-v4">
